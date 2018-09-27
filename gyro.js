@@ -14,9 +14,9 @@ var Gyro = (function() {
     }
 
     function handleOrientation(e) {
-        alpha.innerHTML = e.alpha;
-        beta.innerHTML = e.beta;
-        gamma.innerHTML = e.gamma;
+        alpha.innerHTML = "z: " + e.alpha;
+        beta.innerHTML = "x: " + e.beta;
+        gamma.innerHTML = "y: " + e.gamma;
     }
 
     return {
