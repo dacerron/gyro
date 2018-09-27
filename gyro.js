@@ -21,15 +21,15 @@ var Gyro = (function() {
     }
 
     function handleOrientation(e) {
-        alpha.innerHTML = "z: " + e.alpha;
-        beta.innerHTML = "x: " + e.beta;
-        gamma.innerHTML = "y: " + e.gamma;
+        alpha.innerHTML = "z rot: " + e.alpha;
+        beta.innerHTML = "x rot: " + e.beta;
+        gamma.innerHTML = "y rot: " + e.gamma;
     }
 
     function handleMotion(e) {
-        accAlpha.innerHTML = e.acceleration.x;
-        accBeta.innerHTML = e.acceleration.y;
-        accGamma.innerHTML = e.acceleration.z;
+        accAlpha.innerHTML = "x acc:" + e.acceleration.x;
+        accBeta.innerHTML = "y acc:" + e.acceleration.y;
+        accGamma.innerHTML = "z acc:" + e.acceleration.z;
     }
 
     return {
