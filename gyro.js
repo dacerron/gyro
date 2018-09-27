@@ -27,9 +27,9 @@ var Gyro = (function() {
     }
 
     function handleMotion(e) {
-        accAlpha.innerHTML = "x acc:" + e.acceleration.x.toFixed(2);
-        accBeta.innerHTML = "y acc:" + e.acceleration.y.toFixed(2);
-        accGamma.innerHTML = "z acc:" + e.acceleration.z.toFixed(2);
+        accAlpha.innerHTML = "x acc:" + e.acceleration.x.toFixed(1);
+        accBeta.innerHTML = "y acc:" + e.acceleration.y.toFixed(1);
+        accGamma.innerHTML = "z acc:" + e.acceleration.z.toFixed(1);
     }
 
     return {
